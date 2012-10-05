@@ -1,0 +1,32 @@
+#######################################################
+## This configuration is the default for CC-Chat     ##
+## Version 0.1 alpha by adamjones57                  ##
+#######################################################
+
+configuration:
+  ## The update check is not configured yet, do not enable this option.
+  #updatecheck: false
+  ## Log chat messages sent by players.
+  logchat:
+  ## Log messages sent by players.
+  logmsg:
+  ## Anti-spam configuration
+  spam:
+    minimum-player-count: 10
+    caps-percent: 45
+    minimum-caps: 4
+    force-move:
+  ## Allowed Domains to be posted in chat.
+  domains:
+    allowed:
+    - goldenap.pl
+    - creativecrafters.net
+chat-config:
+  chat-format: '%prefix% %displayname% &7/&f%suffix% %message%'
+  player-join: '&a+ &2%displayname%&a joined the server.'
+  player-leave: '&c- &4%displayname% &cleft the server.'
+  tab-list: '%suffix%%displayname%'
+  messaging:
+    to-player: '&7\ %sender%&7 -> me &7/ &f'
+    from-player: '&7\ me -> %sender% &7/ &f'
+    socialspy: '&7\ %sender% &7-> %recipient% &7/ &f'
